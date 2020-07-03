@@ -33,7 +33,7 @@ public class DayNightUICycle : MonoBehaviour
      public void Init(GameTimeManager Manager)
      {
           TimeManager = Manager;
-          GameTimeSpeedCoeff = Math.PI / 24;
+          GameTimeSpeedCoeff = Math.PI / 12;
           MiddayDefaultValue = MiddayPhase = -Math.PI * 0.5;
           MidnightDefaultValue = MidnightPhase = Math.PI * 0.5;
           DawnDefaultValue = DawnPhase = 0;
