@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CurrentCollider
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Interaction
+  - InteractionPhysics
+  - Terrain
+  - Currents
+  - HideInGame
+  - VolumeMask
+  - Ship
+  - TopdownViewUI
+  - CloseupViewUI
+  - FogOfWar
+  - MapRegion
+  - AISailRoute
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: StaticMap
+    uniqueID: 2985249671
+    locked: 0
+  - name: MapRegions
+    uniqueID: 3982475705
+    locked: 0
+  - name: Terrain
+    uniqueID: 3931428279
+    locked: 0
+  - name: Towns
+    uniqueID: 1195967721
+    locked: 0
+  - name: SailRouteTooltips
+    uniqueID: 2456998811
+    locked: 0
+  - name: SailRoute
+    uniqueID: 2211918561
+    locked: 0
+  - name: Ships
+    uniqueID: 4170759101
+    locked: 0

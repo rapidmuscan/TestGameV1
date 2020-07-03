@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\qamel\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\qamel\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_MaritimeLaw_indie-demo.1484895967.00" t="ExcludeRecursive" />
+    <e p="D:\Unity Projects\MaritimeLaw_indie-demo" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Scripts" t="Include">
+          <e p="_Extensions" t="Include">
+            <e p="Extensions.cs" t="Include" />
+            <e p="MonoSingleton.cs" t="Include" />
+          </e>
+          <e p="_LevelEditor" t="Include">
+            <e p="OceanCurrent.cs" t="Include" />
+          </e>
+          <e p="_Map" t="Include">
+            <e p="ArrowHeadLineBuilder.cs" t="Include" />
+            <e p="CurrentManager.cs" t="Include" />
+            <e p="CurrentSection.cs" t="Include" />
+            <e p="MapRegion.cs" t="Include" />
+            <e p="Ocean.cs" t="Include" />
+          </e>
+          <e p="_Ship" t="Include">
+            <e p="CrewManager.cs" t="Include" />
+            <e p="PirateShip.cs" t="Include" />
+            <e p="Resource.cs" t="Include" />
+            <e p="SailorHolder.cs" t="Include" />
+            <e p="ShipManager.cs" t="Include" />
+            <e p="ShipManager_Movement.cs" t="Include" />
+          </e>
+          <e p="_Town" t="Include">
+            <e p="MarketItem.cs" t="Include" />
+            <e p="PortTavern.cs" t="Include" />
+            <e p="Sailor.cs" t="Include" />
+            <e p="SailorHireGUIEntry.cs" t="Include" />
+            <e p="TavernRumor.cs" t="Include" />
+            <e p="TavernRumoursHQ.cs" t="Include" />
+            <e p="TownInteractGUI.cs" t="Include" />
+            <e p="TownLocation.cs" t="Include" />
+            <e p="TownMarket.cs" t="Include" />
+            <e p="TownWorld.cs" t="Include" />
+          </e>
+          <e p="_TravelScene" t="Include">
+            <e p="AIShipSpawner.cs" t="Include" />
+            <e p="GameTimeManager.cs" t="Include" />
+            <e p="SailRoute.cs" t="Include" />
+            <e p="SailRouteInteractCollider.cs" t="Include" />
+            <e p="SailRouteManager.cs" t="Include" />
+            <e p="SailRouteNode.cs" t="Include" />
+            <e p="ShipRouteLinePart.cs" t="Include" />
+            <e p="TravelSceneManager.cs" t="Include" />
+            <e p="WeatherManager.cs" t="Include" />
+          </e>
+          <e p="_UI" t="Include">
+            <e p="DayNightUICycle.cs" t="Include" />
+            <e p="GUIHub.cs" t="Include" />
+            <e p="GUITooltipData.cs" t="Include" />
+            <e p="NavigationNodeGUI.cs" t="Include" />
+            <e p="RoutePlanningButton.cs" t="Include" />
+            <e p="ShipPanelGUI.cs" t="Include" />
+            <e p="SuppliesTooltip.cs" t="Include" />
+            <e p="TooltipManager.cs" t="Include" />
+            <e p="TopPanelGUI.cs" t="Include" />
+            <e p="TransitBreakdownGUI.cs" t="Include" />
+            <e p="WindowsUI.cs" t="Include" />
+          </e>
+          <e p="CameraController.cs" t="Include" />
+          <e p="CameraManager.cs" t="Include" />
+          <e p="EventsManager.cs" t="Include" />
+          <e p="FogOfWar.cs" t="Include" />
+          <e p="FreeCameraController.cs" t="Include" />
+          <e p="GameEventDialog.cs" t="Include" />
+          <e p="Global.cs" t="Include" />
+          <e p="HideWhenOutOfRange.cs" t="Include" />
+          <e p="ML_FluidVolume.cs" t="Include" />
+          <e p="MLInputModule.cs" t="Include" />
+          <e p="OceanCurrentNew.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestManager.cs" t="Include" />
+          <e p="RaycastManager.cs" t="Include" />
+          <e p="RumourGUIEntry.cs" t="Include" />
+          <e p="RumoursGUI.cs" t="Include" />
+          <e p="SaveDataPreset.cs" t="Include" />
+          <e p="ScreenGUI.cs" t="Include" />
+          <e p="TutorialManager.cs" t="Include" />
+        </e>
+        <e p="_Shaders" t="Include">
+          <e p="ClipShader.shader" t="Include" />
+          <e p="SailShader.shader" t="Include" />
+        </e>
+        <e p="AddForce.cs" t="Include" />
+        <e p="BoatFoundation.cs" t="Include" />
+        <e p="Buoyancy Toolkit" t="Include">
+          <e p="Core" t="Include">
+            <e p="BuoyancyForce.cs" t="Include" />
+            <e p="FluidVolume.cs" t="Include" />
+            <e p="Internal" t="Include">
+              <e p="Editor" t="Include">
+                <e p="BuoyancyForceEditor.cs" t="Include" />
+              </e>
+              <e p="IBuoyancyForce.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Examples" t="Include">
+            <e p="Shared Assets" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="CustomFluidVolume.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="DepthMaskShader.shader" t="Include" />
+                <e p="ExampleWaterShader.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="SetCenterOfMass.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Ciconia Studio" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Double Sided Shaders" t="Include">
+              <e p="Double Sided Emissive Diffuse.shader" t="Include" />
+              <e p="Double Sided Standard Diffuse Bump.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump Cutout.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="CustomParticles" t="Include">
+          <e p="ChristmasTree.cs" t="Include" />
+          <e p="ParticlesController.cs" t="Include" />
+          <e p="RopeTape.cs" t="Include" />
+        </e>
+        <e p="DebugGUI.cs" t="Include" />
+        <e p="FogOfWar" t="Include">
+          <e p="CreatePlaneScript.cs" t="Include" />
+          <e p="FogOfWar.shader" t="Include" />
+          <e p="FogOfWarGeom.shader" t="Include" />
+          <e p="FogOfWarPlayer.cs" t="Include" />
+          <e p="MaterialSettings.cs" t="Include" />
+        </e>
+        <e p="HeightMapGeneratorPackage" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Demos" t="Include">
+              <e p="BoxPresentation" t="Include">
+                <e p="DisplayRenderedTexture.cs" t="Include" />
+              </e>
+              <e p="HeightMapGenerator" t="Include">
+                <e p="DisplayGeneratedTexture.cs" t="Include" />
+              </e>
+            </e>
+            <e p="HeightMap" t="Include">
+              <e p="AbstractHeightMapGenerator.cs" t="Include" />
+              <e p="HeightMapGenerator.cs" t="Include" />
+              <e p="HeightMapRenderer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shader" t="Include">
+            <e p="DepthNormalShader.shader" t="Include" />
+            <e p="DepthShader.shader" t="Include" />
+            <e p="DepthShaderEye.shader" t="Include" />
+          </e>
+        </e>
+        <e p="HydroForm" t="Include">
+          <e p="Resources" t="Include">
+            <e p="Brim.shader" t="Include" />
+            <e p="Cage.shader" t="Include" />
+            <e p="DepthWrite.shader" t="Include" />
+            <e p="HydroformFog.shader" t="Include" />
+            <e p="Octave.shader" t="Include" />
+            <e p="Underwater.shader" t="Include" />
+            <e p="VolumeMaskInterior.shader" t="Include" />
+            <e p="Water.shader" t="Include" />
+            <e p="WaterFunc.cginc" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="BuoyController.cs" t="Include" />
+            <e p="ButtonProperty.cs" t="Include" />
+            <e p="CamController.cs" t="Include" />
+            <e p="HydroformComponent.cs" t="Include" />
+            <e p="HydroformDemo.cs" t="Include" />
+            <e p="HydroMultiCamComp.cs" t="Include" />
+            <e p="UnderwaterFilter.cs" t="Include" />
+            <e p="WaveQuery.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Materials" t="Include">
+          <e p="builtin_shaders-4.1.3" t="Include">
+            <e p="DefaultResources" t="Include">
+              <e p="Alpha-VertexLit.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PostProcessing" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="PostProcessingModelEditorAttribute.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="AmbientOcclusionModelEditor.cs" t="Include" />
+              <e p="AntialiasingModelEditor.cs" t="Include" />
+              <e p="BloomModelEditor.cs" t="Include" />
+              <e p="BuiltinDebugViewsEditor.cs" t="Include" />
+              <e p="ChromaticAberrationEditor.cs" t="Include" />
+              <e p="ColorGradingModelEditor.cs" t="Include" />
+              <e p="DefaultPostFxModelEditor.cs" t="Include" />
+              <e p="DepthOfFieldModelEditor.cs" t="Include" />
+              <e p="DitheringModelEditor.cs" t="Include" />
+              <e p="EyeAdaptationModelEditor.cs" t="Include" />
+              <e p="FogModelEditor.cs" t="Include" />
+              <e p="GrainModelEditor.cs" t="Include" />
+              <e p="MotionBlurModelEditor.cs" t="Include" />
+              <e p="ScreenSpaceReflectionModelEditor.cs" t="Include" />
+              <e p="UserLutModelEditor.cs" t="Include" />
+              <e p="VignetteModelEditor.cs" t="Include" />
+            </e>
+            <e p="Monitors" t="Include">
+              <e p="HistogramMonitor.cs" t="Include" />
+              <e p="ParadeMonitor.cs" t="Include" />
+              <e p="VectorscopeMonitor.cs" t="Include" />
+              <e p="WaveformMonitor.cs" t="Include" />
+            </e>
+            <e p="PostProcessingBehaviourEditor.cs" t="Include" />
+            <e p="PostProcessingFactory.cs" t="Include" />
+            <e p="PostProcessingInspector.cs" t="Include" />
+            <e p="PostProcessingModelEditor.cs" t="Include" />
+            <e p="PostProcessingMonitor.cs" t="Include" />
+            <e p="PropertyDrawers" t="Include">
+              <e p="GetSetDrawer.cs" t="Include" />
+              <e p="MinDrawer.cs" t="Include" />
+              <e p="TrackballGroupDrawer.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="CurveEditor.cs" t="Include" />
+              <e p="EditorGUIHelper.cs" t="Include" />
+              <e p="EditorResources.cs" t="Include" />
+              <e p="FxStyles.cs" t="Include" />
+              <e p="ReflectionUtils.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor Resources" t="Include">
+            <e p="Monitors" t="Include">
+              <e p="HistogramCompute.compute" t="Include" />
+              <e p="HistogramRender.shader" t="Include" />
+              <e p="ParadeRender.shader" t="Include" />
+              <e p="VectorscopeCompute.compute" t="Include" />
+              <e p="VectorscopeRender.shader" t="Include" />
+              <e p="WaveformCompute.compute" t="Include" />
+              <e p="WaveformRender.shader" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="CurveBackground.shader" t="Include" />
+              <e p="Trackball.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Bluenoise64" t="Include">
+              <e p="COPYING.txt" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="ACES.cginc" t="Include" />
+              <e p="AmbientOcclusion.cginc" t="Include" />
+              <e p="AmbientOcclusion.shader" t="Include" />
+              <e p="Blit.shader" t="Include" />
+              <e p="Bloom.cginc" t="Include" />
+              <e p="Bloom.shader" t="Include" />
+              <e p="BuiltinDebugViews.shader" t="Include" />
+              <e p="ColorGrading.cginc" t="Include" />
+              <e p="Common.cginc" t="Include" />
+              <e p="DepthOfField.cginc" t="Include" />
+              <e p="DepthOfField.shader" t="Include" />
+              <e p="DiskKernels.cginc" t="Include" />
+              <e p="EyeAdaptation.cginc" t="Include" />
+              <e p="EyeAdaptation.shader" t="Include" />
+              <e p="EyeHistogram.compute" t="Include" />
+              <e p="Fog.shader" t="Include" />
+              <e p="FXAA.shader" t="Include" />
+              <e p="FXAA3.cginc" t="Include" />
+              <e p="GrainGen.shader" t="Include" />
+              <e p="LutGen.shader" t="Include" />
+              <e p="MotionBlur.cginc" t="Include" />
+              <e p="MotionBlur.shader" t="Include" />
+              <e p="ScreenSpaceRaytrace.cginc" t="Include" />
+              <e p="ScreenSpaceReflection.shader" t="Include" />
+              <e p="TAA.cginc" t="Include" />
+              <e p="TAA.shader" t="Include" />
+              <e p="Tonemapping.cginc" t="Include" />
+              <e p="Uber.shader" t="Include" />
+              <e p="UberSecondPass.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="Attributes" t="Include">
+              <e p="GetSetAttribute.cs" t="Include" />
+              <e p="MinAttribute.cs" t="Include" />
+              <e p="TrackballAttribute.cs" t="Include" />
+              <e p="TrackballGroupAttribute.cs" t="Include" />
+            </e>
+            <e p="Components" t="Include">
+              <e p="AmbientOcclusionComponent.cs" t="Include" />
+              <e p="BloomComponent.cs" t="Include" />
+              <e p="BuiltinDebugViewsComponent.cs" t="Include" />
+              <e p="ChromaticAberrationComponent.cs" t="Include" />
+              <e p="ColorGradingComponent.cs" t="Include" />
+              <e p="DepthOfFieldComponent.cs" t="Include" />
+              <e p="DitheringComponent.cs" t="Include" />
+              <e p="EyeAdaptationComponent.cs" t="Include" />
+              <e p="FogComponent.cs" t="Include" />
+              <e p="FxaaComponent.cs" t="Include" />
+              <e p="GrainComponent.cs" t="Include" />
+              <e p="MotionBlurComponent.cs" t="Include" />
+              <e p="ScreenSpaceReflectionComponent.cs" t="Include" />
+              <e p="TaaComponent.cs" t="Include" />
+              <e p="UserLutComponent.cs" t="Include" />
+              <e p="VignetteComponent.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="AmbientOcclusionModel.cs" t="Include" />
+              <e p="AntialiasingModel.cs" t="Include" />
+              <e p="BloomModel.cs" t="Include" />
+              <e p="BuiltinDebugViewsModel.cs" t="Include" />
+              <e p="ChromaticAberrationModel.cs" t="Include" />
+              <e p="ColorGradingModel.cs" t="Include" />
+              <e p="DepthOfFieldModel.cs" t="Include" />
+              <e p="DitheringModel.cs" t="Include" />
+              <e p="EyeAdaptationModel.cs" t="Include" />
+              <e p="FogModel.cs" t="Include" />
+              <e p="GrainModel.cs" t="Include" />
+              <e p="MotionBlurModel.cs" t="Include" />
+              <e p="ScreenSpaceReflectionModel.cs" t="Include" />
+              <e p="UserLutModel.cs" t="Include" />
+              <e p="VignetteModel.cs" t="Include" />
+            </e>
+            <e p="PostProcessingBehaviour.cs" t="Include" />
+            <e p="PostProcessingComponent.cs" t="Include" />
+            <e p="PostProcessingContext.cs" t="Include" />
+            <e p="PostProcessingModel.cs" t="Include" />
+            <e p="PostProcessingProfile.cs" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="ColorGradingCurve.cs" t="Include" />
+              <e p="GraphicsUtils.cs" t="Include" />
+              <e p="MaterialFactory.cs" t="Include" />
+              <e p="RenderTextureFactory.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Utilities" t="Include">
+            <e p="CustomMotionTexture" t="Include">
+              <e p="ExampleWheelController.cs" t="Include" />
+              <e p="Shaders" t="Include">
+                <e p="CustomMotionVectorTexture.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="RaycastDebug.cs" t="Include" />
+        <e p="Standard Assets" t="Include">
+          <e p="Character Controllers" t="Include">
+            <e p="Sources" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="MouseLook.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="General Scripts" t="Include">
+              <e p="ActivateTrigger.cs" t="Include" />
+            </e>
+            <e p="Utility Scripts" t="Include">
+              <e p="CombineChildren.cs" t="Include" />
+              <e p="MeshCombineUtility.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TempScript.cs" t="Include" />
+        <e p="TextMesh Pro" t="Include">
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="WaterShaderPackage" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="ConnectHeightMap.cs" t="Include" />
+            <e p="Demo" t="Include">
+              <e p="Code" t="Include">
+                <e p="CodeDemo1.cs" t="Include" />
+                <e p="CodeDemo10.cs" t="Include" />
+                <e p="CodeDemo11.cs" t="Include" />
+                <e p="CodeDemo12.cs" t="Include" />
+                <e p="CodeDemo13.cs" t="Include" />
+                <e p="CodeDemo14.cs" t="Include" />
+                <e p="CodeDemo15.cs" t="Include" />
+                <e p="CodeDemo16.cs" t="Include" />
+                <e p="CodeDemo17.cs" t="Include" />
+                <e p="CodeDemo18.cs" t="Include" />
+                <e p="CodeDemo19.cs" t="Include" />
+                <e p="CodeDemo2.cs" t="Include" />
+                <e p="CodeDemo20.cs" t="Include" />
+                <e p="CodeDemo21.cs" t="Include" />
+                <e p="CodeDemo22.cs" t="Include" />
+                <e p="CodeDemo23.cs" t="Include" />
+                <e p="CodeDemo3.cs" t="Include" />
+                <e p="CodeDemo4.cs" t="Include" />
+                <e p="CodeDemo5.cs" t="Include" />
+                <e p="CodeDemo6.cs" t="Include" />
+                <e p="CodeDemo7.cs" t="Include" />
+                <e p="CodeDemo8.cs" t="Include" />
+                <e p="CodeDemo9.cs" t="Include" />
+                <e p="CodeDemoHelper.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Utils" t="Include">
+              <e p="LoadRenderTexture.cs" t="Include" />
+              <e p="LookAt.cs" t="Include" />
+              <e p="MoveBetween.cs" t="Include" />
+              <e p="Rotate.cs" t="Include" />
+              <e p="ScreenShotTool.cs" t="Include" />
+            </e>
+            <e p="WaterShader.cs" t="Include" />
+          </e>
+          <e p="Shader" t="Include">
+            <e p="WaterShader" t="Include">
+              <e p="Debug" t="Include">
+                <e p="Water-Debug_Depth.shader" t="Include" />
+                <e p="Water-Debug_DepthAlpha.shader" t="Include" />
+                <e p="Water-Debug_HeightMap.shader" t="Include" />
+                <e p="Water-Debug_NormalDir.shader" t="Include" />
+                <e p="Water-Debug_Reflection.shader" t="Include" />
+                <e p="Water-Debug_Refraction.shader" t="Include" />
+                <e p="Water-Debug_Specular.shader" t="Include" />
+                <e p="Water-Debug_ViewDir.shader" t="Include" />
+                <e p="Water-DebugLit_Specular.shader" t="Include" />
+                <e p="WaterShaderHelper.cginc" t="Include" />
+              </e>
+              <e p="DirectionalLit" t="Include">
+                <e p="Water-Color_Foam.shader" t="Include" />
+                <e p="Water-Color_Full.shader" t="Include" />
+                <e p="Water-Color_Minimal.shader" t="Include" />
+                <e p="Water-Color_Reflect.shader" t="Include" />
+                <e p="Water-DepthDebug.shader" t="Include" />
+                <e p="Water-Natural_Foam.shader" t="Include" />
+                <e p="Water-Natural_Full.shader" t="Include" />
+                <e p="Water-Natural_Normal.shader" t="Include" />
+                <e p="Water-Natural_Reflection.shader" t="Include" />
+                <e p="Water-Natural_Texture.shader" t="Include" />
+                <e p="Water-Natural_TextureNew.shader" t="Include" />
+                <e p="Water-TextureNormal_ColorFoam.shader" t="Include" />
+                <e p="Water-TextureNormal_Foam.shader" t="Include" />
+                <e p="Water-TextureNormal_Full.shader" t="Include" />
+                <e p="Water-TextureNormal_Minimal.shader" t="Include" />
+                <e p="Water-TextureNormal_Reflect.shader" t="Include" />
+                <e p="WaterShaderHelper.cginc" t="Include" />
+              </e>
+              <e p="DirectionalLit_Iso" t="Include">
+                <e p="Water-Color_Foam.shader" t="Include" />
+                <e p="Water-Color_Full.shader" t="Include" />
+                <e p="Water-Color_Minimal.shader" t="Include" />
+                <e p="Water-Color_Reflect.shader" t="Include" />
+                <e p="Water-Natural_Foam.shader" t="Include" />
+                <e p="Water-Natural_Full.shader" t="Include" />
+                <e p="Water-Natural_Normal.shader" t="Include" />
+                <e p="Water-Natural_Reflection.shader" t="Include" />
+                <e p="Water-Natural_Texture.shader" t="Include" />
+                <e p="Water-TextureNormal_ColorFoam.shader" t="Include" />
+                <e p="Water-TextureNormal_Foam.shader" t="Include" />
+                <e p="Water-TextureNormal_Full.shader" t="Include" />
+                <e p="Water-TextureNormal_Minimal.shader" t="Include" />
+                <e p="Water-TextureNormal_Reflect.shader" t="Include" />
+                <e p="WaterShaderHelper.cginc" t="Include" />
+              </e>
+              <e p="DirectionalLitFog" t="Include">
+                <e p="Water-Color_Full_Fog.shader" t="Include" />
+                <e p="Water-Natural_Full_Fog.shader" t="Include" />
+                <e p="Water-Natural_Texture.shader" t="Include" />
+                <e p="Water-Natural_TextureNew.shader" t="Include" />
+                <e p="Water-TextureNormal_Full.shader" t="Include" />
+                <e p="WaterShaderHelper.cginc" t="Include" />
+              </e>
+              <e p="FakeLit" t="Include">
+                <e p="Water-Color_Foam.shader" t="Include" />
+                <e p="Water-Color_Full.shader" t="Include" />
+                <e p="Water-Color_Minimal.shader" t="Include" />
+                <e p="Water-Color_Reflect.shader" t="Include" />
+                <e p="Water-Natural_Foam.shader" t="Include" />
+                <e p="Water-Natural_Full.shader" t="Include" />
+                <e p="Water-Natural_Minimal.shader" t="Include" />
+                <e p="Water-Natural_Normal.shader" t="Include" />
+                <e p="Water-Natural_Reflection.shader" t="Include" />
+                <e p="Water-Natural_Texture.shader" t="Include" />
+                <e p="Water-Texture_ColorFoam.shader" t="Include" />
+                <e p="Water-Texture_Foam.shader" t="Include" />
+                <e p="Water-Texture_Full.shader" t="Include" />
+                <e p="Water-Texture_Minimal.shader" t="Include" />
+                <e p="Water-Texture_Reflect.shader" t="Include" />
+                <e p="Water-TextureNormal_ColorFoam.shader" t="Include" />
+                <e p="Water-TextureNormal_Foam.shader" t="Include" />
+                <e p="Water-TextureNormal_Full.shader" t="Include" />
+                <e p="Water-TextureNormal_Minimal.shader" t="Include" />
+                <e p="Water-TextureNormal_Reflect.shader" t="Include" />
+                <e p="WaterShaderHelper.cginc" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="WeatherController.cs" t="Include" />
+        <e p="WPG" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Sail.cs" t="Include" />
+            <e p="Ship.cs" t="Include" />
+            <e p="SimpleMovement.cs" t="Include" />
+            <e p="UIConnector.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MaritimeLaw_indie-demo.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
