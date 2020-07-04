@@ -42,7 +42,6 @@ public class GameTimeManager : MonoBehaviour
     {
         ButtonsPressed();
     }
-
     private void FixedUpdate()
     {
         if (SpeedInd == 0)
@@ -96,9 +95,6 @@ public class GameTimeManager : MonoBehaviour
 }
 
 
-
-
-
 [System.Serializable]
 public class GameTimeDate
 {
@@ -117,20 +113,22 @@ public class GameTimeDate
     }
     public void ClampValidate()
     {
-        Hour = Mathf.Max(0, Hour);
-        Hour = Mathf.Min(24, Hour);
-
-        Day = Mathf.Max(1, Day);
-        Day = Mathf.Min(30, Day);
-
-        Month = (MonthName)Mathf.Max(0, (int)Month);
-        Month = (MonthName)Mathf.Min(12, (int)Month);
-
-        Year = Mathf.Max(0, Year);
-        Year = Mathf.Min(2000, Year);
+        ChangePox(ref Hour, 24, 0);
+        ChangePox(ref Day,30,1);
+        ChangePox(ref Month, 12, 0);
+        ChangePox(ref Year, 2000, 0);
+    }
+    void ChangePox(ref int Obj, int ObjMax, int ObjMin)
+    {
+        Obj = Mathf.Max(ObjMin, Obj);
+        Obj = Mathf.Min(ObjMax, Obj);
+    }
+    void ChangePox(ref MonthName month, int ObjMax, int ObjMin)
+    {
+        month = (MonthName)Mathf.Max(ObjMin, (int)month);
+        month = (MonthName)Mathf.Min(ObjMin, (int)month);
     }
 
-   
     private void PassValidate()
     {
         if (Hour >= 24)
@@ -149,13 +147,11 @@ public class GameTimeDate
             Year++;
         }
     }
-
     public void Change()
     {
         Hour += 1;
         PassValidate();
     }
-   
     public enum MonthName
     {
         Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
