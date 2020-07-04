@@ -10,58 +10,43 @@ using System;
 public class DayNightUICycle : MonoBehaviour
 {
 
-     [SerializeField] private RectTransform MiddayObject;
-     [SerializeField] private RectTransform MidnightObject;
-     [SerializeField] private RectTransform DawnObject;
-     [SerializeField] private RectTransform DuskObject;
-     public double Radius = 50;
-     public double MiddayPhase;
-     public double MiddayDefaultValue;
-     public double MidnightPhase;
-     public double MidnightDefaultValue;
-     public double DawnPhase;
-     public double DawnDefaultValue;
-     public double DuskPhase;
-     public double DuskDefaultValue;
-     public double Phase;
+    [SerializeField] private RectTransform MiddayObject;
+    [SerializeField] private RectTransform MidnightObject;
+    [SerializeField] private RectTransform DawnObject;
+    [SerializeField] private RectTransform DuskObject;
+    private double Radius = 150;
+    private double MiddayPhase = -Math.PI * 0.5;
+    private double MiddayDefaultValue = -Math.PI * 0.5;
+    private double MidnightPhase = Mathf.PI * 0.5;
+    private double MidnightDefaultValue = Math.PI * 0.5;
+    private double DawnPhase = 0;
+    private double DawnDefaultValue = 0;
+    private double DuskPhase = Mathf.PI;
+    private double DuskDefaultValue = Math.PI;
+    private double Phase = 0;
+    private double GameTimeSpeedCoeff = Math.PI / 12;
+    private GameTimeManager TimeManager;
+    public void Init(GameTimeManager Manager)
+    {
+        TimeManager = Manager;
+    }
+    private void LateUpdate()
+    {
+        var step = -TimeManager.DeltaTime * GameTimeSpeedCoeff;
+        Phase += step;
 
-     public double GameTimeSpeedCoeff = 0.102;
-
-     // public float SpeedCorrection = 0.95f;
-     private GameTimeManager TimeManager;
-
-     public void Init(GameTimeManager Manager)
-     {
-          TimeManager = Manager;
-          GameTimeSpeedCoeff = Math.PI / 12;
-          MiddayDefaultValue = MiddayPhase = -Math.PI * 0.5;
-          MidnightDefaultValue = MidnightPhase = Math.PI * 0.5;
-          DawnDefaultValue = DawnPhase = 0;
-          DuskDefaultValue = DuskPhase = Math.PI;
-     }
-
-     private void LateUpdate()
-     {
-          var step = -TimeManager.DeltaTime * GameTimeSpeedCoeff;
-          Phase += step;
-
-          if (MiddayObject != null)
-               UpdatePosition(MiddayObject, MiddayDefaultValue);
-
-          if (MidnightObject != null)
-               UpdatePosition(MidnightObject, MidnightDefaultValue);
-
-          if (DuskObject != null)
-               UpdatePosition(DuskObject, DuskDefaultValue);
-
-          if (DawnObject != null)
-               UpdatePosition(DawnObject, DawnDefaultValue);
-     }
-     
-     public void UpdatePosition(RectTransform Object, double TimePhase)
-     {
-          double x = Math.Cos(Phase + TimePhase) * Radius;
-          double y = Math.Sin(Phase + TimePhase) * Radius;
-          Object.transform.localPosition = new Vector3((float) x, (float) y, 0f);
-     }
+        UpdatePosition(MiddayObject, MiddayDefaultValue, MiddayObject);
+        UpdatePosition(MidnightObject, MidnightDefaultValue, MidnightObject);
+        UpdatePosition(DuskObject, DuskDefaultValue, DuskObject);
+        UpdatePosition(DawnObject, DawnDefaultValue, DawnObject);
+    }
+    public void UpdatePosition(RectTransform Object, double TimePhase, RectTransform CurObj)
+    {
+        if (CurObj != null)
+        {
+            double x = Math.Cos(Phase + TimePhase) * Radius;
+            double y = Math.Sin(Phase + TimePhase) * Radius;
+            Object.transform.localPosition = new Vector3((float)x, (float)y, 0f);
+        }
+    }
 }

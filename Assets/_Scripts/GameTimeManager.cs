@@ -38,15 +38,11 @@ public class GameTimeManager : MonoBehaviour
 
         DayNightCycleCarousel.Init(this);
     }
-
-
     private void Update()
     {
         ButtonsPressed();
-
-        
-        //CurrentTimeFillImage.fillAmount = (m_currentTime.Hour + (Time.time - m_lastUpdateTime) / UpdateIntervals[SpeedInd]) / 24f;
     }
+
     private void FixedUpdate()
     {
         if (SpeedInd == 0)
@@ -54,7 +50,7 @@ public class GameTimeManager : MonoBehaviour
 
         if (TimeSinceLastUpdate > 1f)
         {
-            TimeSinceLastUpdate = 0f;
+            TimeSinceLastUpdate -= 1f;
             if (SpeedInd > 0)
             {
                 CurrentTime.Change();
@@ -64,29 +60,13 @@ public class GameTimeManager : MonoBehaviour
         }
         TimeSinceLastUpdate += DeltaTime;
     }
-
-    public void FillDatesText()
-    {
-        CurrentTimeTextDay.text = (CurrentTime.Day + 1).ToString("0");
-        CurrentTimeTextMonth.text = (CurrentTime.Month).ToString();
-        CurrentTimeTextYear.text = (CurrentTime.Year).ToString("0");
-    }
-
     public void ButtonsPressed()
     {
         if ((Input.GetKeyUp(KeyCode.Plus) || Input.GetKeyUp(KeyCode.KeypadPlus)) && SpeedInd != 0)
-        {
-            SpeedInd += 1;
-            SpeedInd = Mathf.Clamp(SpeedInd, 0, UpdateIntervals.Length - 1);
-            Time.timeScale = 0.5f * (SpeedInd + 1);
-        }
+            ChangeTimeFlow(1);
 
         if ((Input.GetKeyUp(KeyCode.Minus) || Input.GetKeyUp(KeyCode.KeypadMinus)) && SpeedInd > 1)
-        {
-            SpeedInd += -1;
-            SpeedInd = Mathf.Clamp(SpeedInd, 0, UpdateIntervals.Length - 1);
-            Time.timeScale = 0.5f * (SpeedInd + 1);
-        }
+            ChangeTimeFlow(-1);
 
         if (Input.GetKeyDown((KeyCode.Space)))
         {
@@ -98,9 +78,20 @@ public class GameTimeManager : MonoBehaviour
             else
             {
                 SpeedInd = SpeedBeforePause;
-                SpeedBeforePause = -1;
             }
         }
+    }
+    public void FillDatesText()
+    {
+        CurrentTimeTextDay.text = (CurrentTime.Day + 1).ToString("0");
+        CurrentTimeTextMonth.text = (CurrentTime.Month).ToString();
+        CurrentTimeTextYear.text = (CurrentTime.Year).ToString("0");
+    }
+    void ChangeTimeFlow(int SpeedIndEnc)
+    {
+        SpeedInd += SpeedIndEnc;
+        SpeedInd = Mathf.Clamp(SpeedInd, 0, UpdateIntervals.Length - 1);
+        Time.timeScale = 0.5f * (SpeedInd + 1);
     }
 }
 
@@ -124,16 +115,6 @@ public class GameTimeDate
         Year = NewYear;
         ClampValidate();
     }
-
-    public GameTimeDate(GameTimeDate Other)
-    {
-        Hour = Other.Hour;
-        Day = Other.Day;
-        Month = Other.Month;
-        Year = Other.Year;
-        ClampValidate();
-    }
-
     public void ClampValidate()
     {
         Hour = Mathf.Max(0, Hour);
@@ -149,89 +130,32 @@ public class GameTimeDate
         Year = Mathf.Min(2000, Year);
     }
 
+   
     private void PassValidate()
     {
         if (Hour >= 24)
         {
-            Hour = 0;
+            Hour -= 24;
             Day++;
         }
-
         if (Day > GameTimeManager.DaysInAMonth[(int)Month])
         {
-            Day = 0;
+            Day -= GameTimeManager.DaysInAMonth[(int)Month];
             Month++;
         }
-
         if ((int)Month >= 12)
         {
-            Month = 0;
+            Month -= 12;
             Year++;
         }
     }
-
-    public static GameTimeDate operator -(GameTimeDate C1, GameTimeDate C2)
-    {
-        var day = 0;
-        var year = 0;//C1.Year - C2.Year;
-        var month = 0;// C1.Month - C2.Month;
-
-        day += C1.Day - C2.Day;
-        if (day < 1)
-        {
-            day += 30;
-            month--;
-        }
-
-        month += C1.Month - C2.Month;
-        if (month < 0)
-        {
-            month += 12;
-            year--;
-        }
-
-        year += C1.Year - C2.Year;
-
-        return new GameTimeDate(0, day, (MonthName)month, year);
-    }
-
-    public static GameTimeDate ParseDaysIntoDate(int DayCount)
-    {
-        var day = DayCount % 30;
-        var month = DayCount / 30;
-        var year = DayCount / 360;
-
-        return new GameTimeDate(0, day, (MonthName)month, year);
-    }
-
 
     public void Change()
     {
         Hour += 1;
         PassValidate();
     }
-
-    public string ToDateString()
-    {
-        return string.Format("{0} {1} {2}", Day, Month.ToString(), Year);
-    }
-
-    public string ToTimeLeftString()
-    {
-        if (Year == 0)
-        {
-            if (Month == 0)
-            {
-                return string.Format("{0} days", Day);
-            }
-            return string.Format("{0} months {1} days", Month, Day);
-        }
-        if (Month == 0)
-            return string.Format("{0} years {1} days", Year, Day);
-
-        return string.Format("{0} years {1} months {2} days", Year, Month, Day);
-    }
-
+   
     public enum MonthName
     {
         Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec
