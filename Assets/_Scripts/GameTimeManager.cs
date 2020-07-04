@@ -113,17 +113,17 @@ public class GameTimeDate
     }
     public void ClampValidate()
     {
-        ChangePox(ref Hour, 24, 0);
-        ChangePox(ref Day,30,1);
-        ChangePox(ref Month, 12, 0);
-        ChangePox(ref Year, 2000, 0);
+        ObjValidate(ref Hour, 24, 0);
+        ObjValidate(ref Day,30,1);
+        ObjValidate(ref Month, 12, 0);
+        ObjValidate(ref Year, 2000, 0);
     }
-    void ChangePox(ref int Obj, int ObjMax, int ObjMin)
+    void ObjValidate(ref int Obj, int ObjMax, int ObjMin)
     {
         Obj = Mathf.Max(ObjMin, Obj);
         Obj = Mathf.Min(ObjMax, Obj);
     }
-    void ChangePox(ref MonthName month, int ObjMax, int ObjMin)
+    void ObjValidate(ref MonthName month, int ObjMax, int ObjMin)
     {
         month = (MonthName)Mathf.Max(ObjMin, (int)month);
         month = (MonthName)Mathf.Min(ObjMin, (int)month);
